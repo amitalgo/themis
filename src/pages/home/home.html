@@ -1,0 +1,178 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content center text-center class="vertical-align-content card">
+  <ion-grid>
+    <div *ngIf="role=='salesHead'">
+      <ion-row>
+        <ion-col col-6>
+            <ion-card>
+                <ion-card-header>
+                    <img src="assets/imgs/dr.png"/>
+                </ion-card-header>
+              
+                <ion-card-content text-center>
+                  <!-- Add card content here! -->
+                  Active Doctors
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+        <ion-col col-6>
+            <ion-card (click)="doReview()"> 
+                <ion-card-header>
+                    <img src="assets/imgs/reply.png"/>
+                </ion-card-header>              
+                <ion-card-content>
+                  <!-- Add card content here! -->
+                  Doctors Feedback
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+            <ion-card (click)="training()">
+                <ion-card-header>
+                    <img src="assets/imgs/product.png"/>
+                </ion-card-header>              
+                <ion-card-content >
+                  <!-- Add card content here! -->
+                  Sales Training
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+        <ion-col col-6>
+            <ion-card>
+                <ion-card-header>
+                    <img src="assets/imgs/review-2.png"/>
+                </ion-card-header>              
+                <ion-card-content>
+                  <!-- Add card content here! -->
+                  Sales Person
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div *ngIf="role=='sales'">
+        <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>
+                  
+                    <ion-card-content text-center>
+                      <!-- Add card content here! -->
+                      Doctors Reviews
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      Training Manual
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                      Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      Products
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      My Profile
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+    </div>
+    <div *ngIf="role=='doctors'">
+        <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>
+                  
+                    <ion-card-content text-center>
+                      <!-- Add card content here! -->
+                      Videos
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      My Reviews
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                      Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      Notification
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-header>
+                        Icon
+                    </ion-card-header>              
+                    <ion-card-content>
+                      <!-- Add card content here! -->
+                      Product
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

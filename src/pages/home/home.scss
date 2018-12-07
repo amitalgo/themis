@@ -1,0 +1,15 @@
+page-home {
+    .vertical-align-content > *
+    {
+        display: flex!important;
+        align-content: center!important;
+        align-items: center!important;
+    }
+
+    ion-card{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 !important;
+      }
+}
